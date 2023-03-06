@@ -1,13 +1,12 @@
 package Steps;
 
 
-import org.openqa.selenium.WebElement;
 import Page.HomePage;
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FormSteps extends HomePage {
 
-    private WebElement first_name;
+    public  FormSteps(ChromeDriver driver) {super(driver);}
 
     public void enterFirstName () {
         String FIRST_NAME = "Brianda";
